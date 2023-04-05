@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="utf-8">
+			<title>Mr. JavaScript</title>
+	</head>
+	<body>
+
+		<h1>I'm Mr. JavaScript</h1>
+		<a href="#" id="one">Hey JavaScript, how ya feeling?<br></a>
+		<a href="index.html" class="two">Reset</a>
+		<script type="text/javascript">
+
+			var a = document.getElementById("one");
+			a.addEventListener('click',function(){
+
+				var h1 = document.querySelector("h1");
+				h1.innerHTML = "Not good bah";
+			});
+			
+		</script>
+	</body>
+</html>

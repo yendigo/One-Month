@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Who you</title>
+
+		<style>
+			
+			/* Basic CSS comment */	
+			body {
+				background: #BBB;
+				color: white;
+				width: 960px;
+				margin: 0 auto;
+				font-size: 30px;
+				color: black;
+			}
+
+			h1 {
+				font-size: 65px;
+				color: #333	;
+			}
+
+			img {
+				height: 350px;
+				width: 600px;
+			}
+			
+		</style>
+	
+	</head>	
+
+	<body>
+		
+		<script>
+
+			var name = prompt("What's your name?");	
+
+			var car = [
+				'BMW',
+				'Honda',
+				'Toyota'
+			];
+
+			var carImg = [
+				'bmw.png',
+				'honda.png',
+				'toyota.png'
+			];
+
+			var randomNumber = Math.floor(Math.random()*car.length);
+			var carname = car[randomNumber];
+			var carpic = carImg[randomNumber];
+
+			if(name==="Chris"){
+				document.write("<h1>Hello " + name +" you won a " + carname + "!</h1>");
+				document.write("<img src=\"" + carpic +"\">")							 
+			}
+			else if(name==="Yen"){
+				document.write("<h1>Hello " + name +" you won a " + carname + "!</h1>");
+				document.write("<img src=\"" + carpic + "\">")		
+			}
+			else{
+				document.write("<h1>Hello " + name + "!<h1>");
+			}
+
+		</script>
+		
+	</body>
+
+</html>

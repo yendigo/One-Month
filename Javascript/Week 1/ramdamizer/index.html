@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Ramdamizer App - Nararamdaman mo ba?">
+		<meta name="keywords" content="hula hula, paramdam, ramdam">
+
+		<title>Ramdamizer</title>
+		
+        <style>
+            body {
+                background-color: beige;
+                margin: auto;
+                font-size: 90px;
+            }
+        </style>
+
+		<script>
+		
+			var mema = [
+				'Kumain ka na ba?',
+				'Ang ganda mo',
+				'Alam mo kung bakit?',
+				'Salamat sayo',
+				'Grabe ka naman',
+				'Ayaw ko na',
+                'Aasawahin na kita'
+			];
+
+			var memo = [
+				'pinatigas mo hotdog ko',
+				'binasa mo pechay ko',
+				'imbis na paganon paganon',
+				'aylabyu ayieeeeeeeeeut',
+                'binigyan mo ako ng BJ(Buko Juice)',
+				'kasirola',
+                'because',
+				'ikaw kasi',
+			];
+
+			var randomNumber1 = Math.floor(Math.random()*mema.length);
+			var randomNumber2 = Math.floor(Math.random()*memo.length);
+			
+			var una = mema[randomNumber1];
+			var pangalawa = memo[randomNumber2];
+			
+			document.write("<strong>" + una + "</strong> kasi <strong>" + pangalawa + "</strong>.");
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
